@@ -2,11 +2,15 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "basePath": "/portfolio",
+  "assetPrefix": "/portfolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --pretty --noEmit",
+    "test-all": "npm run lint && npm run type-check"
   },
   "dependencies": {
     "@types/node": "20.5.9",
